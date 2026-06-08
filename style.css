@@ -75,10 +75,39 @@ section.flex-content{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 255, 0.63);
+
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 section.normal{
     padding: 20px;
+}
+
+section > article{
+    border: 2px dotted green;
+}
+
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article.media-text{
+    display: flex;
+    flex-flow: row row-reverse;
+}
+
+article > div.text{
+    flex: 1 1 500px;
+
+    border: 2px dashed blue;
+}
+
+article > div.media{
+    flex: 1 0 500px;
+
+    border: 2px dashed red;
 }
 
 footer{
